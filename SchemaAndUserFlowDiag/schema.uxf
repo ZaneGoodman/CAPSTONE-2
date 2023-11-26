@@ -1,0 +1,13 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>130</x><y>60</y><w>290</w><h>240</h></coordinates><panel_attributes>users
+--
+bg=green
+
+username: Varchar(25) Primary Key,
+password: Text Not null</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>610</x><y>50</y><w>290</w><h>240</h></coordinates><panel_attributes>prayer_tracker
+--
+bg=green
+ username: varchar(25)
+       References users on Delete Cascade,
+ notes Text,
+ has_prayed: Boolean Not Null Default False
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>80</y><w>220</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element></diagram>
