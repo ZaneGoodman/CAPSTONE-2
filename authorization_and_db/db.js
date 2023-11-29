@@ -1,4 +1,3 @@
-"use strict";
 //Database setup for prayer_roon
 
 const { Client } = require("pg");

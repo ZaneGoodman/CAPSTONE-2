@@ -1,5 +1,3 @@
-"use strict";
-
 const SECRET_KEY = process.env.SECRET_KEY || "secret_development";
 
 const PORT = +process.env.PORT || 3001;
