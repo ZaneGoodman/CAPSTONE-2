@@ -13,14 +13,22 @@ const Signup = () => {
     password: "",
   };
   const [userData, setUserData] = useState(INITIAL_STATE);
+  //Login - Check for error, respond with errors if present.
+  //log in user, add token and username, navigate home page
   const handleLogin = async (fData) => {
     setUserData(() => fData);
-    setToken(await Authorization.signup(fData.username, fData.password));
-    setUsername(fData.username);
-    navigate("/", { replace: true });
-    navigate(0);
-  };
+    const response = await Authorization.signup(fData.username, fData.password)
+      .then((res) => setToken(res))
+      .catch(() => "invalid");
 
+    if (response === "invalid") {
+      return "invalid";
+    } else {
+      setUsername(fData.username);
+      navigate("/", { replace: true });
+      navigate(0);
+    }
+  };
   return (
     <>
       <h1>Sign Up</h1>

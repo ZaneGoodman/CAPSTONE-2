@@ -7,10 +7,12 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Home from "../pages/Home";
 import UserNotes from "../pages/UserNotes";
+import NotFound404 from "../pages/NotFound404";
 import { AuthNavWrapper } from "../Navs/AuthNav";
 import { NoAuthNavWrapper } from "../Navs/NoAuthNav";
 
 const Routes = () => {
+  // Routes that do not need authentication
   const routesForPublic = [
     {
       path: "/login",
@@ -20,7 +22,12 @@ const Routes = () => {
       path: "/signup",
       element: <Signup />,
     },
+    {
+      path: "*",
+      element: <NotFound404 />,
+    },
   ];
+  //Routes that require authentication
   const routesForAuthenticatedOnly = [
     {
       path: "/",
@@ -38,10 +45,14 @@ const Routes = () => {
           path: "/logout",
           element: <Logout />,
         },
+        {
+          path: "*",
+          element: <NotFound404 />,
+        },
       ],
     },
   ];
-
+  //Wrap each set of routes in their specific navbar
   const router = createBrowserRouter([
     {
       element: <NoAuthNavWrapper />,

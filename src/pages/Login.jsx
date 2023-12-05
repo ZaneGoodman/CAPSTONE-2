@@ -5,7 +5,7 @@ import AuthForm from "../forms/AuthForm";
 import Authorization from "../models/authUser";
 
 const Login = () => {
-  const { setToken, setUsername } = useAuth();
+  const { token, setToken, setUsername } = useAuth();
 
   const navigate = useNavigate();
 
@@ -14,13 +14,21 @@ const Login = () => {
     password: "",
   };
   const [userData, setUserData] = useState(INITIAL_STATE);
-
+  //Login - Check for error, respond with errors if present.
+  //log in user, add token and username, navigate home page
   const handleLogin = async (fData) => {
     setUserData(() => fData);
-    setToken(await Authorization.login(fData.username, fData.password));
-    setUsername(fData.username);
-    navigate("/", { replace: true });
-    navigate(0);
+    const response = await Authorization.login(fData.username, fData.password)
+      .then((res) => setToken(res))
+      .catch(() => "invalid");
+
+    if (response === "invalid") {
+      return "invalid";
+    } else {
+      setUsername(fData.username);
+      navigate("/", { replace: true });
+      navigate(0);
+    }
   };
 
   return (

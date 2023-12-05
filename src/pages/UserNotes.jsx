@@ -8,7 +8,7 @@ const UserNotes = () => {
   const { username } = useAuth();
 
   const [notes, setNotes] = useState([]);
-
+  //Get all notes that the user has submitted to their profile and render them
   useEffect(() => {
     async function getUserNotes() {
       const allNotes = await Notes.getAllNotes(username);

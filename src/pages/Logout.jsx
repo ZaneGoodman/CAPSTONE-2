@@ -6,6 +6,7 @@ const Logout = () => {
   const { setToken } = useAuth();
   const navigate = useNavigate();
 
+  //log user out, clear localStorage with authProvider
   useEffect(() => {
     const handleLogout = () => {
       setToken();

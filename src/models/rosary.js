@@ -5,6 +5,9 @@ const CALENDAR_BASE_URL =
 axios.defaults.withCredentials = false;
 
 class Rosary {
+  /**getByDay method - by passing in a weekday like 'tuesday' this method
+   * returns an object of rosary information.
+   */
   static async getByDay(weekday) {
     try {
       const res = await axios.get(
@@ -12,10 +15,15 @@ class Rosary {
       );
       return res;
     } catch (error) {
-      console.error("Error in getByDay:", error);
       throw error;
     }
   }
+  /**
+   * getByDate method - By passing in a date in '2023/05/05' format
+   * a Catholic Calendar API will return season information and use the
+   * weekday of that information to call getByDay method to get the
+   * correct rosary data for the passed in date.
+   */
   static async getByDate(date) {
     // YYYY/MM/DD
     try {
@@ -27,7 +35,6 @@ class Rosary {
       const rosaryResponse = await this.getByDay(weekday);
       return { ...rosaryResponse, season };
     } catch (error) {
-      console.error("Error in getByDay:", error);
       throw error;
     }
   }

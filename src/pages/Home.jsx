@@ -5,24 +5,27 @@ import NotesForm from "../forms/NotesForm";
 import "react-dropdown/style.css";
 import { useAuth } from "../provider/authProvider";
 import Rosary from "../models/rosary";
+import prayers from "../models/staticRosaryData";
 import Notes from "../models/notes";
 
 const Home = () => {
-  //   const navigate = useNavigate();
   const { username } = useAuth();
   const [ros, setRos] = useState({});
   const [season, setSeason] = useState();
   const [date, setDate] = useState(new Date());
   const [showCalendar, setShowCalendar] = useState(false);
   const [addedNotes, setAddedNotes] = useState(false);
+
   const currDate = String(new Date()).slice(0, 15);
   const pickedDay = String(date).slice(0, 15);
 
   useEffect(() => {
     const getRosary = async () => {
+      //Get Rosary info based on date, add data to state
       const rosaryInfo = await Rosary.getByDate(formatDate(date));
       setRos((r) => ({ ...r, ...rosaryInfo.data[0] }));
       setSeason(rosaryInfo.season);
+      //Track if notes have been added,add to state hide form if they have
       const didAddNotes = await Notes.checkDateExists(
         username,
         formatDate(new Date())
@@ -34,6 +37,7 @@ const Home = () => {
   }, [date, addedNotes, username]);
 
   const toggleCalendar = () =>
+    //Toggle showing calendar based on button click
     showCalendar === true ? setShowCalendar(false) : setShowCalendar(true);
 
   const parseAnnounces = () => {
@@ -47,21 +51,21 @@ const Home = () => {
           </span>
           <span>
             <h3>Our Father</h3>
-            <p>{ros["our _father_1"]}</p>
+            <p>{prayers.getOurFather()}</p>
           </span>
           <span>
             <h3>Hail Mary X10</h3>
             <small>*While meditating on the rosary mystery*</small>
-            <p>{ros["hail _mary_1"]}</p>
+            <p>{prayers.getHailMary()}</p>
           </span>
           <span>
             <h3>Glory Be to the Father</h3>
             <small>*Holding Chain*</small>
-            <p>{ros.glory_be_1}</p>
+            <p>{prayers.getGloryBe()}</p>
           </span>
           <span>
             <h3>Fatima Prayer (oh my Jesus)</h3>
-            <p>{ros.oh_my_jesus_1}</p>
+            <p>{prayers.getFatima()}</p>
           </span>
         </div>
       );
@@ -84,32 +88,32 @@ const Home = () => {
       <span>
         <h3>Apostles Creeed</h3>
         <small>*Holding Crucifix*</small>
-        <p>{ros.i_believe}</p>
+        <p>{prayers.getApostlesCreed()}</p>
       </span>
       <span>
         <h3>Our Father</h3>
-        <p>{String(ros["our _father_1"]).replace(/\s/g, " ")}</p>
+        <p>{prayers.getOurFather()}</p>
       </span>
       <span>
         <h3>Hail Mary X3</h3>
-        <p>{ros["hail _mary_1"]}</p>
+        <p>{prayers.getHailMary()}</p>
       </span>
       <span>
         <h3>Glory Be to the Father</h3>
         <small>*Holding Chain*</small>
-        <p>{ros.glory_be_1}</p>
+        <p>{prayers.getGloryBe()}</p>
       </span>
       {parseAnnounces()}
       <span>
         <h3>Hail, Holy Queen</h3>
-        <p>{ros.holy_queen}</p>
+        <p>{prayers.getHailHolyQueen()}</p>
       </span>
       <span>
         <h3>Final Prayer</h3>
-        <p>{ros.final_prayer}</p>
+        <p>{prayers.getFinalPrayer()}</p>
       </span>
       <span>
-        <h3>{ros.in_the_name_1}</h3>
+        <h3>{prayers.getInTheName()}</h3>
       </span>
       {currDate === pickedDay && addedNotes === false && (
         <NotesForm

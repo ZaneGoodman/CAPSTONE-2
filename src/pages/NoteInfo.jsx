@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Note from "./Note";
 
+//Show Note Info, toggle note on click
 const NoteInfo = ({ date, season, has_prayed, notes }) => {
   const [clicked, setClicked] = useState(false);
   const onClick = () => {
