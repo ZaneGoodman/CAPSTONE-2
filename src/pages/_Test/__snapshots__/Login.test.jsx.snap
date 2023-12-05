@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login matches snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    Welcome to the Prayer Room 
+  </h1>
+  <h2>
+    Come pray the rosary with us
+  </h2>
+  <form>
+    <label
+      for="username"
+    >
+      Username
+    </label>
+    <input
+      id="username"
+      name="username"
+      value=""
+    />
+    <label>
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      value=""
+    />
+    <button>
+      Go!
+    </button>
+  </form>
+  <span>
+    Dont have an account? 
+    <a
+      href="/signup"
+    >
+      Sign up
+    </a>
+  </span>
+</DocumentFragment>
+`;

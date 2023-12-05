@@ -5,12 +5,10 @@ import AuthForm from "../forms/AuthForm";
 import Authorization from "../models/authUser";
 
 const Login = () => {
-  const { setToken } = useAuth();
+  const { setToken, setUsername } = useAuth();
+
   const navigate = useNavigate();
-  // const newToken = await Authorization.login(
-  //   userData.username,
-  //   userData.password
-  // );
+
   const INITIAL_STATE = {
     username: "",
     password: "",
@@ -20,6 +18,7 @@ const Login = () => {
   const handleLogin = async (fData) => {
     setUserData(() => fData);
     setToken(await Authorization.login(fData.username, fData.password));
+    setUsername(fData.username);
     navigate("/", { replace: true });
     navigate(0);
   };

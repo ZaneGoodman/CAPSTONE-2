@@ -1,15 +1,16 @@
 import React from "react";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { useAuth } from "../provider/authProvider";
 import { ProtectedRoute } from "./ProtectedRoute";
 import Logout from "../pages/Logout";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Home from "../pages/Home";
-const Routes = () => {
-  const { token } = useAuth();
+import UserNotes from "../pages/UserNotes";
+import { AuthNavWrapper } from "../Navs/AuthNav";
+import { NoAuthNavWrapper } from "../Navs/NoAuthNav";
 
+const Routes = () => {
   const routesForPublic = [
     {
       path: "/login",
@@ -30,8 +31,8 @@ const Routes = () => {
           element: <Home />,
         },
         {
-          path: "/rosary",
-          element: <div>rosary page </div>,
+          path: "/my-notes",
+          element: <UserNotes />,
         },
         {
           path: "/logout",
@@ -42,8 +43,15 @@ const Routes = () => {
   ];
 
   const router = createBrowserRouter([
-    ...routesForPublic,
-    ...routesForAuthenticatedOnly,
+    {
+      element: <NoAuthNavWrapper />,
+      children: [...routesForPublic],
+    },
+    {
+      path: "/",
+      element: <AuthNavWrapper />,
+      children: [...routesForAuthenticatedOnly],
+    },
   ]);
   return <RouterProvider router={router} />;
 };

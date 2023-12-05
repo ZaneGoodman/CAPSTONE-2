@@ -5,7 +5,7 @@ import AuthForm from "../forms/AuthForm";
 import Authorization from "../models/authUser";
 
 const Signup = () => {
-  const { setToken } = useAuth();
+  const { setToken, setUsername } = useAuth();
   const navigate = useNavigate();
 
   const INITIAL_STATE = {
@@ -16,6 +16,7 @@ const Signup = () => {
   const handleLogin = async (fData) => {
     setUserData(() => fData);
     setToken(await Authorization.signup(fData.username, fData.password));
+    setUsername(fData.username);
     navigate("/", { replace: true });
     navigate(0);
   };

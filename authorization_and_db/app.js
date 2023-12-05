@@ -1,6 +1,7 @@
 const express = require("express");
 const { NotFoundError } = require("./expressError");
 const authRoutes = require("./authAPI-routes/auth");
+const rosaryRoutes = require("./authAPI-routes/rosaryNotesRoutes");
 const app = express();
 
 // Add Access Control Allow Origin headers
@@ -13,8 +14,9 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.json());
-app.use("/auth", authRoutes);
 
+app.use("/auth", authRoutes);
+app.use("/rosary", rosaryRoutes);
 /**Handle 404 errors. Matches almost everything */
 app.use(function (req, res, next) {
   return next(new NotFoundError());

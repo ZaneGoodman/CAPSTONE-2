@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotesForm matches snapshot 1`] = `
+<DocumentFragment>
+  <form>
+    <label
+      for="notes"
+    >
+      Notes
+    </label>
+    <textarea
+      cols="100"
+      id="notes"
+      name="notes"
+      rows="15"
+    />
+    <label
+      for="marker"
+    >
+      Prayed today?
+    </label>
+    <input
+      id="marker"
+      name="marker"
+      type="checkbox"
+      value="false"
+    />
+    <button>
+      Submit
+    </button>
+  </form>
+</DocumentFragment>
+`;

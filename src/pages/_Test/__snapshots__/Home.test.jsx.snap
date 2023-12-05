@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1 />
+    <small>
+      Mon Dec 04 2023
+      <button>
+        Pick Date
+      </button>
+    </small>
+    <h2>
+      The  Mystery
+    </h2>
+    <span>
+      <h3>
+        Apostles Creeed
+      </h3>
+      <small>
+        *Holding Crucifix*
+      </small>
+      <p />
+    </span>
+    <span>
+      <h3>
+        Our Father
+      </h3>
+      <p>
+        undefined
+      </p>
+    </span>
+    <span>
+      <h3>
+        Hail Mary X3
+      </h3>
+      <p />
+    </span>
+    <span>
+      <h3>
+        Glory Be to the Father
+      </h3>
+      <small>
+        *Holding Chain*
+      </small>
+      <p />
+    </span>
+    <div>
+      <span>
+        <h3>
+          Announce 1
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Our Father
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Hail Mary X10
+        </h3>
+        <small>
+          *While meditating on the rosary mystery*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Fatima Prayer (oh my Jesus)
+        </h3>
+        <p />
+      </span>
+    </div>
+    <div>
+      <span>
+        <h3>
+          Announce 2
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Our Father
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Hail Mary X10
+        </h3>
+        <small>
+          *While meditating on the rosary mystery*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Fatima Prayer (oh my Jesus)
+        </h3>
+        <p />
+      </span>
+    </div>
+    <div>
+      <span>
+        <h3>
+          Announce 3
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Our Father
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Hail Mary X10
+        </h3>
+        <small>
+          *While meditating on the rosary mystery*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Fatima Prayer (oh my Jesus)
+        </h3>
+        <p />
+      </span>
+    </div>
+    <div>
+      <span>
+        <h3>
+          Announce 4
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Our Father
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Hail Mary X10
+        </h3>
+        <small>
+          *While meditating on the rosary mystery*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Fatima Prayer (oh my Jesus)
+        </h3>
+        <p />
+      </span>
+    </div>
+    <div>
+      <span>
+        <h3>
+          Announce 5
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Our Father
+        </h3>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Hail Mary X10
+        </h3>
+        <small>
+          *While meditating on the rosary mystery*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p />
+      </span>
+      <span>
+        <h3>
+          Fatima Prayer (oh my Jesus)
+        </h3>
+        <p />
+      </span>
+    </div>
+    <span>
+      <h3>
+        Hail, Holy Queen
+      </h3>
+      <p />
+    </span>
+    <span>
+      <h3>
+        Final Prayer
+      </h3>
+      <p />
+    </span>
+    <span>
+      <h3 />
+    </span>
+    <form>
+      <label
+        for="notes"
+      >
+        Notes
+      </label>
+      <textarea
+        cols="100"
+        id="notes"
+        name="notes"
+        rows="15"
+      />
+      <label
+        for="marker"
+      >
+        Prayed today?
+      </label>
+      <input
+        id="marker"
+        name="marker"
+        type="checkbox"
+        value="false"
+      />
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const jsonschema = require("jsonschema");
-const userAuthSchema = require("../userAuth.json");
+const userAuthSchema = require("../schemas/userAuth.json");
 const express = require("express");
 const router = new express.Router();
 const { createToken } = require("../helpers/token");
@@ -9,7 +9,6 @@ const { BadRequestError } = require("../expressError");
 /** POST /auth/token {username, password} => {token}
  *
  * Will return a JWT token to be used for future route request in react
- *
  *
  */
 
@@ -21,7 +20,7 @@ router.post("/token", async function (req, res, next) {
       throw new BadRequestError(errs);
     }
     const { username, password } = req.body;
-    const user = await User.authenticate(username, password);
+    const user = await User.authenticate({ username, password });
     const token = createToken(user);
     return res.json({ token });
   } catch (err) {
@@ -45,7 +44,7 @@ router.post("/register", async function (req, res, next) {
       throw new BadRequestError(errs);
     }
     const { username, password } = req.body;
-    const newUser = await User.register(username, password);
+    const newUser = await User.register({ username, password });
     const token = createToken(newUser);
     return res.status(201).json({ token });
   } catch (err) {

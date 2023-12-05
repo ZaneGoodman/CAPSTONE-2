@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": ["username", "has_prayed", "date", "season"],
+  "properties": {
+    "username": {
+      "type": "string",
+      "maxLength": 25
+    },
+    "notes": {
+      "type": "string"
+    },
+    "has_prayed": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string"
+    },
+    "season": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteInfo matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    title="noteInfo"
+  >
+    <h4>
+      12/05/05 | Ordinary TIme 🙏📿
+    </h4>
+  </span>
+</DocumentFragment>
+`;

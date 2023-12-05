@@ -9,7 +9,7 @@ class User {
    * And validate the passed in password
    * Return error if unauthorized or if user not found
    */
-  static async authenticate(username, password) {
+  static async authenticate({ username, password }) {
     /**Find the user */
     const result = await db.query(
       `
@@ -33,7 +33,7 @@ class User {
     throw new UnauthorizedError("Invalid username/password");
   }
 
-  static async register(username, password) {
+  static async register({ username, password }) {
     const duplicateCheck = await db.query(
       `SELECT username 
         FROM users 
@@ -43,6 +43,7 @@ class User {
     if (duplicateCheck.rows[0]) {
       throw new BadRequestError(`Username ${username} is taken`);
     }
+
     const hashedPassword = await bcrypt.hash(password, BCRYPT_WORK_FACTOR);
 
     const result = await db.query(

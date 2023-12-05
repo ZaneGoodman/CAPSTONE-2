@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthForm matches snapshot 1`] = `
+<DocumentFragment>
+  <form>
+    <label
+      for="username"
+    >
+      Username
+    </label>
+    <input
+      id="username"
+      name="username"
+      value=""
+    />
+    <label>
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      value=""
+    />
+    <button>
+      Go!
+    </button>
+  </form>
+</DocumentFragment>
+`;

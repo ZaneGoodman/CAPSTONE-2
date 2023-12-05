@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+/**Login user */
+
 const AuthForm = (props) => {
   const INITIAL_STATE = {
     username: "",

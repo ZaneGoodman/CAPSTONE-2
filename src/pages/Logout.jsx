@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../provider/authProvider";
 
@@ -6,14 +6,15 @@ const Logout = () => {
   const { setToken } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    setToken();
-    navigate("/", { replace: true });
-  };
-  setTimeout(() => {
+  useEffect(() => {
+    const handleLogout = () => {
+      setToken();
+      navigate("/", { replace: true });
+    };
     handleLogout();
-  }, 3 * 1000);
-  return <>LogoutPage</>;
+  }, [setToken, navigate]);
+
+  return <>Loading...</>;
 };
 
 export default Logout;

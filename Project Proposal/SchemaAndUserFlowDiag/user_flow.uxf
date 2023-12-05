@@ -1,5 +1,5 @@
 <diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes
-</help_text><element><id>UMLPackage</id><coordinates><x>126</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>LogIn/SignUp
+</help_text><element><id>UMLPackage</id><coordinates><x>36</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>LogIn/SignUp
 --
 bg=red
   
@@ -17,7 +17,7 @@ Log in
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>423</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>Todays Rosaray
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>333</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>Todays Rosaray
 --
 bg=red
 
@@ -35,7 +35,7 @@ submit your notes! -btn
 &lt;                                                                             &gt;
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>711</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>Sowing calender
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>621</x><y>90</y><w>252</w><h>198</h></coordinates><panel_attributes>Sowing calender
 --
 bg=red
 
@@ -51,7 +51,7 @@ prayer for that day.
 
 onclick of date
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>765</x><y>153</y><w>126</w><h>45</h></coordinates><panel_attributes>Calender 12.26.23</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>711</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>Picked from calender rosary
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>675</x><y>153</y><w>126</w><h>45</h></coordinates><panel_attributes>Calender 12.26.23</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>621</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>Picked from calender rosary
 --
 bg=red
 Navbar - my notes      current day        log out
@@ -63,7 +63,7 @@ The Sorrowful mistery
 Calender btn
 
 "this is where the itemized list walking 
-through the sorrowful mistery prayer will be"</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>423</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>next and back btns for rosary
+through the sorrowful mistery prayer will be"</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>333</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>next and back btns for rosary
 --
 bg=red
 
@@ -79,16 +79,16 @@ Calender btn
 through the sorrowful mistery prayer will be"
 
 &lt;                                                                             &gt;
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>351</x><y>45</y><w>144</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>140;50;140;20;10;20;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>36</y><w>288</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;80;10;20;300;20;300;90</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>144</y><w>153</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>261</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>261</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>240;110;240;40;10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>261</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>60;110;60;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>549</x><y>270</y><w>342</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;10;10;60;360;60;360;130</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>270</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;10;10;70;60;70;60;110</additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>234</y><w>144</w><h>243</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>140;10;120;10;120;250;10;250</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>126</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>Notes
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>45</y><w>144</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>140;50;140;20;10;20;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>36</y><w>288</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;80;10;20;300;20;300;90</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>144</y><w>153</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>261</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>261</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>240;110;240;40;10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>738</x><y>261</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>60;110;60;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>423</x><y>270</y><w>342</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;60;360;60;360;130</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>270</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;70;60;70;60;110</additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>234</y><w>144</w><h>243</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>140;10;120;10;120;250;10;250</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>36</x><y>342</y><w>252</w><h>198</h></coordinates><panel_attributes>Notes
 --
 bg=red
 
@@ -107,7 +107,7 @@ week (date) - (date)
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>126</x><y>576</y><w>252</w><h>198</h></coordinates><panel_attributes>Week of notes and prayer markers
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>36</x><y>576</y><w>252</w><h>198</h></coordinates><panel_attributes>Week of notes and prayer markers
 --
 bg=red
 Navbar -   current day    log out
@@ -122,11 +122,11 @@ ydayayddyadyadyadyadyaydaydya
 (date) - prayed 
 	notes : yadaydaydaydaydaydaydayd
 ydayayddyadyadyadyadyaydaydya
-Back btn                                                                      </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>423</y><w>54</w><h>189</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>40;190;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>441</y><w>54</w><h>342</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>40;10;10;10;10;360;40;360</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>63</y><w>189</w><h>414</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;440;30;440;30;10;190;10;190;60</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>351</y><w>171</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>360</y><w>621</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;170;10;220;670;220;670;10;470;10;470;30</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>81</y><w>666</w><h>513</h></coordinates><panel_attributes>lt=&lt;-
-</panel_attributes><additional_attributes>10;510;10;550;720;550;720;10;540;10;540;40</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>279</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+Back btn                                                                      </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>423</y><w>54</w><h>189</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>40;190;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>441</y><w>54</w><h>342</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>40;10;10;10;10;360;40;360</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>63</y><w>189</w><h>414</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;440;30;440;30;10;190;10;190;60</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>351</y><w>171</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>360</y><w>621</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;170;10;220;670;220;670;10;470;10;470;30</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>81</y><w>666</w><h>513</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;510;10;550;720;550;720;10;540;10;540;40</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>279</y><w>234</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
 </panel_attributes><additional_attributes>240;10;240;50;10;50;10;110</additional_attributes></element></diagram>
