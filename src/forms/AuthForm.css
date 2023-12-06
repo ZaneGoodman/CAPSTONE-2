@@ -1,0 +1,23 @@
+.AuthForm-input {
+  text-align: center;
+  margin-top: 5px;
+}
+.AuthForm-form {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+  width: 20rem;
+}
+.AuthForm-errors {
+  text-align: left;
+  color: rgb(240, 149, 149);
+}
+.AuthForm-label {
+  font-family: "Rosarivo", cursive;
+  color: rgb(236, 234, 226);
+}
+.AuthForm-btn {
+  font-family: "Rosarivo", cursive;
+  margin: 5px;
+}

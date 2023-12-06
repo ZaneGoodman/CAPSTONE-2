@@ -51,7 +51,7 @@ test("renders Note component on click of span", async () => {
     </AuthProvider>
   );
 
-  const span = getByTitle("noteInfo");
-  fireEvent.click(span);
+  const accordianHeader = getByTitle("noteInfo");
+  fireEvent.click(accordianHeader);
   expect(getByText("Test Note")).toBeInTheDocument();
 });

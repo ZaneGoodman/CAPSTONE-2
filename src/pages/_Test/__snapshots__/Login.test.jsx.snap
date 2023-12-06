@@ -2,48 +2,81 @@
 
 exports[`Login matches snapshot 1`] = `
 <DocumentFragment>
-  <h1>
-    Welcome to the Prayer Room 
-  </h1>
-  <h2>
-    Come pray the rosary with us
-  </h2>
-  <form>
-    <label
-      for="username"
+  <div
+    class="Login-background"
+  >
+    <div
+      class="Login"
     >
-      Username
-    </label>
-    <input
-      autocomplete="username"
-      id="username"
-      name="username"
-      placeholder="username"
-      type="text"
-      value=""
-    />
-    <label>
-      Password
-    </label>
-    <input
-      autocomplete="current-password"
-      id="password"
-      name="password"
-      placeholder="password"
-      type="password"
-      value=""
-    />
-    <button>
-      Go!
-    </button>
-  </form>
-  <span>
-    Dont have an account? 
-    <a
-      href="/signup"
-    >
-      Sign up
-    </a>
-  </span>
+      <h1
+        class="Login-header"
+      >
+        Welcome to the Prayer Room 
+      </h1>
+      <h2
+        class="Login-header"
+      >
+        Come pray the rosary with us
+      </h2>
+      <form
+        class="AuthForm-form"
+      >
+        <div
+          class="mb-3"
+        >
+          <label
+            class="AuthForm-label form-label"
+            for="username"
+          >
+            Username
+          </label>
+          <input
+            autocomplete="username"
+            class="AuthForm-input form-control"
+            id="username"
+            name="username"
+            placeholder="......."
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="mb-3"
+        >
+          <label
+            class="AuthForm-label form-label"
+          >
+            Password
+          </label>
+          <input
+            autocomplete="current-password"
+            class="AuthForm-input form-control"
+            id="password"
+            name="password"
+            placeholder="......."
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="AuthForm-btn btn btn-dark"
+          type="button"
+        >
+          Join
+        </button>
+      </form>
+      <span
+        class="Login-check"
+      >
+        Dont have an account? 
+        <a
+          class="Login-link"
+          href="/signup"
+        >
+          Sign up
+        </a>
+      </span>
+    </div>
+  </div>
 </DocumentFragment>
 `;

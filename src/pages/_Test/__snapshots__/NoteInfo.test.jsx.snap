@@ -2,12 +2,36 @@
 
 exports[`NoteInfo matches snapshot 1`] = `
 <DocumentFragment>
-  <span
-    title="noteInfo"
+  <div
+    class="accordion"
   >
-    <h4>
-      12/05/05 | Ordinary TIme 🙏📿
-    </h4>
-  </span>
+    <div
+      class="accordion-item"
+    >
+      <h2
+        class="accordion-header"
+        title="noteInfo"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          type="button"
+        >
+          12/05/05 | Ordinary TIme 🙏🏽📿
+        </button>
+      </h2>
+      <div
+        class="accordion-collapse collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          <p>
+            Test Note
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;

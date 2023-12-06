@@ -3,7 +3,7 @@ import { useAuth } from "../provider/authProvider";
 import { useNavigate, Link } from "react-router-dom";
 import AuthForm from "../forms/AuthForm";
 import Authorization from "../models/authUser";
-
+import "./Login.css";
 const Login = () => {
   const { token, setToken, setUsername } = useAuth();
 
@@ -32,14 +32,19 @@ const Login = () => {
   };
 
   return (
-    <>
-      <h1>Welcome to the Prayer Room </h1>
-      <h2>Come pray the rosary with us</h2>
-      <AuthForm login={handleLogin} />
-      <span>
-        Dont have an account? <Link to={"/signup"}>Sign up</Link>
-      </span>
-    </>
+    <div className="Login-background">
+      <div className="Login">
+        <h1 className="Login-header">Welcome to the Prayer Room </h1>
+        <h2 className="Login-header">Come pray the rosary with us</h2>
+        <AuthForm login={handleLogin} />
+        <span className="Login-check">
+          Dont have an account?{" "}
+          <Link className="Login-link" to={"/signup"}>
+            Sign up
+          </Link>
+        </span>
+      </div>
+    </div>
   );
 };
 

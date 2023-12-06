@@ -1,0 +1,8 @@
+.NotFound404-container {
+  background-image: url("https://pbs.twimg.com/media/B5RczHmCUAAjNHU.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60rem;
+  height: 50rem;
+  margin: auto;
+}

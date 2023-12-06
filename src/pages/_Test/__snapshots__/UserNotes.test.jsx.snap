@@ -2,9 +2,19 @@
 
 exports[`UserNotes matches snapshot 1`] = `
 <DocumentFragment>
-  <h1>
-    Your Prayer Notes
-  </h1>
-  <ul />
+  <div
+    class="UserNotes-container"
+  >
+    <div
+      class="UserNotes-list"
+    >
+      <h1>
+        Your Prayer Notes
+      </h1>
+      <h3>
+        You haven't added any notes yet
+      </h3>
+    </div>
+  </div>
 </DocumentFragment>
 `;

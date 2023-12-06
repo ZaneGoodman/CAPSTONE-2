@@ -7,6 +7,9 @@ import { useAuth } from "../provider/authProvider";
 import Rosary from "../models/rosary";
 import prayers from "../models/staticRosaryData";
 import Notes from "../models/notes";
+import "./Home.css";
+import Button from "react-bootstrap/Button";
+import "react-calendar/dist/Calendar.css";
 
 const Home = () => {
   const { username } = useAuth();
@@ -45,25 +48,25 @@ const Home = () => {
     for (let i = 1; i <= 5; i++) {
       const announce = (
         <div key={i}>
-          <span>
+          <span className="Home-span">
             <h3>Announce {i}</h3>
             <p>{ros[`announce_${i}`]}</p>
           </span>
-          <span>
+          <span className="Home-span">
             <h3>Our Father</h3>
             <p>{prayers.getOurFather()}</p>
           </span>
-          <span>
+          <span className="Home-span">
             <h3>Hail Mary X10</h3>
             <small>*While meditating on the rosary mystery*</small>
             <p>{prayers.getHailMary()}</p>
           </span>
-          <span>
+          <span className="Home-span">
             <h3>Glory Be to the Father</h3>
             <small>*Holding Chain*</small>
             <p>{prayers.getGloryBe()}</p>
           </span>
-          <span>
+          <span className="Home-span">
             <h3>Fatima Prayer (oh my Jesus)</h3>
             <p>{prayers.getFatima()}</p>
           </span>
@@ -75,54 +78,84 @@ const Home = () => {
   };
 
   return (
-    <div>
-      {showCalendar && (
-        <Calendar data-testid="calendar" onChange={setDate} value={date} />
-      )}
-      <h1>{season}</h1>
-      <small>
-        {pickedDay}
-        <button onClick={toggleCalendar}>Pick Date</button>
-      </small>
-      <h2>The {ros.group_by} Mystery</h2>
-      <span>
-        <h3>Apostles Creeed</h3>
-        <small>*Holding Crucifix*</small>
-        <p>{prayers.getApostlesCreed()}</p>
-      </span>
-      <span>
-        <h3>Our Father</h3>
-        <p>{prayers.getOurFather()}</p>
-      </span>
-      <span>
-        <h3>Hail Mary X3</h3>
-        <p>{prayers.getHailMary()}</p>
-      </span>
-      <span>
-        <h3>Glory Be to the Father</h3>
-        <small>*Holding Chain*</small>
-        <p>{prayers.getGloryBe()}</p>
-      </span>
-      {parseAnnounces()}
-      <span>
-        <h3>Hail, Holy Queen</h3>
-        <p>{prayers.getHailHolyQueen()}</p>
-      </span>
-      <span>
-        <h3>Final Prayer</h3>
-        <p>{prayers.getFinalPrayer()}</p>
-      </span>
-      <span>
-        <h3>{prayers.getInTheName()}</h3>
-      </span>
-      {currDate === pickedDay && addedNotes === false && (
-        <NotesForm
-          date={formatDate(date)}
-          season={season}
-          username={username}
-          setAddedNotes={setAddedNotes}
+    <div id="Home-page">
+      <div className="Home-candle-left">
+        <img
+          alt="A Lit candle"
+          src="https://media2.giphy.com/media/3aWkZTWqeVyHS/giphy.gif"
         />
-      )}
+      </div>
+      <div className="Home-candle-right">
+        <img
+          alt="A Lit candle"
+          src="https://media2.giphy.com/media/3aWkZTWqeVyHS/giphy.gif"
+        />
+      </div>
+      <div className="Home-container">
+        {showCalendar && (
+          <Calendar
+            className="Home-calendar"
+            data-testid="calendar"
+            onChange={setDate}
+            value={date}
+          />
+        )}
+        <h1>{season}</h1>
+        <small className="Home-date">
+          {pickedDay}
+          <Button onClick={toggleCalendar} variant="secondary">
+            Pick Date
+          </Button>
+        </small>
+        <h2>The {ros.group_by} Mystery</h2>
+
+        <span className="Home-span">
+          <h3>Apostles Creeed</h3>
+          <small>*Holding Crucifix*</small>
+          <p>{prayers.getApostlesCreed()}</p>
+        </span>
+
+        <span className="Home-span">
+          <h3>Our Father</h3>
+          <p>{prayers.getOurFather()}</p>
+        </span>
+
+        <span className="Home-span">
+          <h3>Hail Mary X3</h3>
+          <p>{prayers.getHailMary()}</p>
+        </span>
+
+        <span className="Home-span">
+          <h3>Glory Be to the Father</h3>
+          <small>*Holding Chain*</small>
+          <p>{prayers.getGloryBe()}</p>
+        </span>
+
+        {parseAnnounces()}
+
+        <span className="Home-span">
+          <h3>Hail, Holy Queen</h3>
+          <p>{prayers.getHailHolyQueen()}</p>
+        </span>
+
+        <span className="Home-span">
+          <h3>Final Prayer</h3>
+          <p>{prayers.getFinalPrayer()}</p>
+        </span>
+
+        <span className="Home-span">
+          <h3>{prayers.getInTheName()}</h3>
+        </span>
+
+        {currDate === pickedDay && addedNotes === false && (
+          <NotesForm
+            date={formatDate(date)}
+            season={season}
+            username={username}
+            setAddedNotes={setAddedNotes}
+          />
+        )}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "./AuthForm.css";
 /**Login user */
 
 const AuthForm = (props) => {
@@ -31,38 +34,53 @@ const AuthForm = (props) => {
 
   return (
     <>
-      <form onSubmit={formik.handleSubmit}>
-        <label htmlFor="username">Username</label>
-        <input
-          onChange={formik.handleChange}
-          type="text"
-          autoComplete="username"
-          placeholder="username"
-          id="username"
-          name="username"
-          onBlur={formik.handleBlur}
-          value={formik.values.username}
-        />
-        {formik.touched.username && formik.errors.username ? (
-          <p>{formik.errors.username}</p>
-        ) : null}
-        <label>Password</label>
-        <input
-          onChange={formik.handleChange}
-          type="password"
-          autoComplete="current-password"
-          placeholder="password"
-          id="password"
-          name="password"
-          onBlur={formik.handleBlur}
-          value={formik.values.password}
-        />
-        {formik.touched.password && formik.errors.password ? (
-          <p>{formik.errors.password}</p>
-        ) : null}
-        {valid === false ? <p>Invalid username/password</p> : null}
-        <button>Go!</button>
-      </form>
+      <Form className="AuthForm-form">
+        <Form.Group className="mb-3">
+          <Form.Label htmlFor="username" className="AuthForm-label">
+            Username
+          </Form.Label>
+          <Form.Control
+            className="AuthForm-input"
+            onChange={formik.handleChange}
+            type="text"
+            autoComplete="username"
+            placeholder="......."
+            id="username"
+            name="username"
+            onBlur={formik.handleBlur}
+            value={formik.values.username}
+          />
+          {formik.touched.username && formik.errors.username ? (
+            <p className="AuthForm-errors">{formik.errors.username}</p>
+          ) : null}
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className="AuthForm-label">Password</Form.Label>
+          <Form.Control
+            className="AuthForm-input"
+            onChange={formik.handleChange}
+            type="password"
+            autoComplete="current-password"
+            placeholder="......."
+            id="password"
+            name="password"
+            onBlur={formik.handleBlur}
+            value={formik.values.password}
+          />
+          {formik.touched.password && formik.errors.password ? (
+            <p className="AuthForm-errors">{formik.errors.password}</p>
+          ) : null}
+          {valid === false ? (
+            <p className="AuthForm-errors">Invalid username/password</p>
+          ) : null}
+        </Form.Group>
+        <Button
+          variant="dark"
+          className="AuthForm-btn"
+          onClick={formik.handleSubmit}>
+          Join
+        </Button>
+      </Form>
     </>
   );
 };

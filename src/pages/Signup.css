@@ -1,0 +1,25 @@
+.Signup {
+  text-align: center;
+  margin: 40px;
+}
+
+.Signup-header {
+  color: rgb(236, 234, 226);
+  font-family: "Rosarivo", cursive;
+  text-align: center;
+}
+
+.Signup-background {
+  background-image: url("https://cdn.pixabay.com/photo/2014/10/22/18/16/church-498525_1280.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 49px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}

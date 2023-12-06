@@ -1,0 +1,78 @@
+.Home-container {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  width: 50rem;
+}
+
+h1,
+button,
+small,
+h2,
+span,
+h3 {
+  font-family: "Rosarivo", cursive;
+}
+
+.Home-span {
+  margin: 100px;
+}
+.Home-span h3 {
+  border-color: rgb(151, 145, 145);
+  border-width: 3px;
+  border-style: inset;
+  background-color: rgb(238, 195, 162);
+  width: 50%;
+  margin: auto;
+}
+.Home-span p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.Home-date button {
+  margin: 10px;
+}
+
+.Home-span small {
+  color: rgb(240, 11, 11);
+}
+
+#Home-page {
+  background-image: url("https://images.freeimages.com/images/large-previews/954/wooden-rosary-1188070.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 49px;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+}
+
+.Home-candle-left img {
+  float: left;
+  width: 20rem;
+  position: relative;
+  animation: forwards;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.Home-candle-right img {
+  float: right;
+  width: 20rem;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.Home-calendar {
+  position: relative;
+  margin: auto;
+  margin-bottom: 15px;
+}

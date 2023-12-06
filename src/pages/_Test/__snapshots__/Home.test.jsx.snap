@@ -2,333 +2,445 @@
 
 exports[`Card matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    <h1 />
-    <small>
-      Tue Dec 05 2023
-      <button>
-        Pick Date
-      </button>
-    </small>
-    <h2>
-      The  Mystery
-    </h2>
-    <span>
-      <h3>
-        Apostles Creeed
-      </h3>
-      <small>
-        *Holding Crucifix*
-      </small>
-      <p>
-        I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead;he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.
-      </p>
-    </span>
-    <span>
-      <h3>
-        Our Father
-      </h3>
-      <p>
-        Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-      </p>
-    </span>
-    <span>
-      <h3>
-        Hail Mary X3
-      </h3>
-      <p>
-        Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-      </p>
-    </span>
-    <span>
-      <h3>
-        Glory Be to the Father
-      </h3>
-      <small>
-        *Holding Chain*
-      </small>
-      <p>
-        Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-      </p>
-    </span>
-    <div>
-      <span>
-        <h3>
-          Announce 1
-        </h3>
-        <p />
-      </span>
-      <span>
-        <h3>
-          Our Father
-        </h3>
-        <p>
-          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Hail Mary X10
-        </h3>
-        <small>
-          *While meditating on the rosary mystery*
-        </small>
-        <p>
-          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Glory Be to the Father
-        </h3>
-        <small>
-          *Holding Chain*
-        </small>
-        <p>
-          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Fatima Prayer (oh my Jesus)
-        </h3>
-        <p>
-          O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
-        </p>
-      </span>
-    </div>
-    <div>
-      <span>
-        <h3>
-          Announce 2
-        </h3>
-        <p />
-      </span>
-      <span>
-        <h3>
-          Our Father
-        </h3>
-        <p>
-          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Hail Mary X10
-        </h3>
-        <small>
-          *While meditating on the rosary mystery*
-        </small>
-        <p>
-          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Glory Be to the Father
-        </h3>
-        <small>
-          *Holding Chain*
-        </small>
-        <p>
-          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Fatima Prayer (oh my Jesus)
-        </h3>
-        <p>
-          O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
-        </p>
-      </span>
-    </div>
-    <div>
-      <span>
-        <h3>
-          Announce 3
-        </h3>
-        <p />
-      </span>
-      <span>
-        <h3>
-          Our Father
-        </h3>
-        <p>
-          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Hail Mary X10
-        </h3>
-        <small>
-          *While meditating on the rosary mystery*
-        </small>
-        <p>
-          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Glory Be to the Father
-        </h3>
-        <small>
-          *Holding Chain*
-        </small>
-        <p>
-          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Fatima Prayer (oh my Jesus)
-        </h3>
-        <p>
-          O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
-        </p>
-      </span>
-    </div>
-    <div>
-      <span>
-        <h3>
-          Announce 4
-        </h3>
-        <p />
-      </span>
-      <span>
-        <h3>
-          Our Father
-        </h3>
-        <p>
-          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Hail Mary X10
-        </h3>
-        <small>
-          *While meditating on the rosary mystery*
-        </small>
-        <p>
-          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Glory Be to the Father
-        </h3>
-        <small>
-          *Holding Chain*
-        </small>
-        <p>
-          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Fatima Prayer (oh my Jesus)
-        </h3>
-        <p>
-          O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
-        </p>
-      </span>
-    </div>
-    <div>
-      <span>
-        <h3>
-          Announce 5
-        </h3>
-        <p />
-      </span>
-      <span>
-        <h3>
-          Our Father
-        </h3>
-        <p>
-          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Hail Mary X10
-        </h3>
-        <small>
-          *While meditating on the rosary mystery*
-        </small>
-        <p>
-          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Glory Be to the Father
-        </h3>
-        <small>
-          *Holding Chain*
-        </small>
-        <p>
-          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
-        </p>
-      </span>
-      <span>
-        <h3>
-          Fatima Prayer (oh my Jesus)
-        </h3>
-        <p>
-          O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
-        </p>
-      </span>
-    </div>
-    <span>
-      <h3>
-        Hail, Holy Queen
-      </h3>
-      <p>
-        Hail, holy Queen, mother of mercy, our life, our sweetness, and our hope. To you we cry, poor banished children of Eve; to you we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious advocate, your eyes of mercy toward us; and after this, our exile, show unto us the blessed fruit of your womb, Jesus. O clement, O loving, O sweet Virgin Mary.
-      </p>
-    </span>
-    <span>
-      <h3>
-        Final Prayer
-      </h3>
-      <p>
-        O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ Our Lord. Amen.
-      </p>
-    </span>
-    <span>
-      <h3>
-        In the name of the Father, and of the Son, and of the Holy Spirit. Amen.
-      </h3>
-    </span>
-    <form>
-      <label
-        for="notes"
-      >
-        Notes
-      </label>
-      <textarea
-        cols="100"
-        id="notes"
-        name="notes"
-        rows="15"
+  <div
+    id="Home-page"
+  >
+    <div
+      class="Home-candle-left"
+    >
+      <img
+        alt="A Lit candle"
+        src="https://media2.giphy.com/media/3aWkZTWqeVyHS/giphy.gif"
       />
-      <label
-        for="marker"
-      >
-        Prayed today?
-      </label>
-      <input
-        id="marker"
-        name="marker"
-        type="checkbox"
-        value="false"
+    </div>
+    <div
+      class="Home-candle-right"
+    >
+      <img
+        alt="A Lit candle"
+        src="https://media2.giphy.com/media/3aWkZTWqeVyHS/giphy.gif"
       />
-      <button>
-        Submit
-      </button>
-    </form>
+    </div>
+    <div
+      class="Home-container"
+    >
+      <h1 />
+      <small
+        class="Home-date"
+      >
+        Tue Dec 05 2023
+        <button
+          class="btn btn-secondary"
+          type="button"
+        >
+          Pick Date
+        </button>
+      </small>
+      <h2>
+        The  Mystery
+      </h2>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Apostles Creeed
+        </h3>
+        <small>
+          *Holding Crucifix*
+        </small>
+        <p>
+          I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; he descended into hell; on the third day he rose again from the dead;he ascended into heaven, and is seated at the right hand of God the Father almighty; from there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.
+        </p>
+      </span>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Our Father
+        </h3>
+        <p>
+          Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+        </p>
+      </span>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Hail Mary X3
+        </h3>
+        <p>
+          Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+        </p>
+      </span>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Glory Be to the Father
+        </h3>
+        <small>
+          *Holding Chain*
+        </small>
+        <p>
+          Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+        </p>
+      </span>
+      <div>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Announce 1
+          </h3>
+          <p />
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Our Father
+          </h3>
+          <p>
+            Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Hail Mary X10
+          </h3>
+          <small>
+            *While meditating on the rosary mystery*
+          </small>
+          <p>
+            Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Glory Be to the Father
+          </h3>
+          <small>
+            *Holding Chain*
+          </small>
+          <p>
+            Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Fatima Prayer (oh my Jesus)
+          </h3>
+          <p>
+            O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
+          </p>
+        </span>
+      </div>
+      <div>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Announce 2
+          </h3>
+          <p />
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Our Father
+          </h3>
+          <p>
+            Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Hail Mary X10
+          </h3>
+          <small>
+            *While meditating on the rosary mystery*
+          </small>
+          <p>
+            Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Glory Be to the Father
+          </h3>
+          <small>
+            *Holding Chain*
+          </small>
+          <p>
+            Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Fatima Prayer (oh my Jesus)
+          </h3>
+          <p>
+            O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
+          </p>
+        </span>
+      </div>
+      <div>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Announce 3
+          </h3>
+          <p />
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Our Father
+          </h3>
+          <p>
+            Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Hail Mary X10
+          </h3>
+          <small>
+            *While meditating on the rosary mystery*
+          </small>
+          <p>
+            Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Glory Be to the Father
+          </h3>
+          <small>
+            *Holding Chain*
+          </small>
+          <p>
+            Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Fatima Prayer (oh my Jesus)
+          </h3>
+          <p>
+            O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
+          </p>
+        </span>
+      </div>
+      <div>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Announce 4
+          </h3>
+          <p />
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Our Father
+          </h3>
+          <p>
+            Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Hail Mary X10
+          </h3>
+          <small>
+            *While meditating on the rosary mystery*
+          </small>
+          <p>
+            Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Glory Be to the Father
+          </h3>
+          <small>
+            *Holding Chain*
+          </small>
+          <p>
+            Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Fatima Prayer (oh my Jesus)
+          </h3>
+          <p>
+            O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
+          </p>
+        </span>
+      </div>
+      <div>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Announce 5
+          </h3>
+          <p />
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Our Father
+          </h3>
+          <p>
+            Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Hail Mary X10
+          </h3>
+          <small>
+            *While meditating on the rosary mystery*
+          </small>
+          <p>
+            Hail Mary, full of grace, the Lord is with you; blessed are you among women, and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners now and at the hour of our death. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Glory Be to the Father
+          </h3>
+          <small>
+            *Holding Chain*
+          </small>
+          <p>
+            Glory be to the Father, the Son, and the Holy Spirit; as it was in the beginning, is now, and ever shall be, world without end. Amen.
+          </p>
+        </span>
+        <span
+          class="Home-span"
+        >
+          <h3>
+            Fatima Prayer (oh my Jesus)
+          </h3>
+          <p>
+            O my Jesus, forgive us our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy. Amen.
+          </p>
+        </span>
+      </div>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Hail, Holy Queen
+        </h3>
+        <p>
+          Hail, holy Queen, mother of mercy, our life, our sweetness, and our hope. To you we cry, poor banished children of Eve; to you we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious advocate, your eyes of mercy toward us; and after this, our exile, show unto us the blessed fruit of your womb, Jesus. O clement, O loving, O sweet Virgin Mary.
+        </p>
+      </span>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          Final Prayer
+        </h3>
+        <p>
+          O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ Our Lord. Amen.
+        </p>
+      </span>
+      <span
+        class="Home-span"
+      >
+        <h3>
+          In the name of the Father, and of the Son, and of the Holy Spirit. Amen.
+        </h3>
+      </span>
+      <form
+        class=""
+      >
+        <div
+          class="mb-3"
+        >
+          <label
+            class="NotesForm-label form-label"
+            for="notes"
+          >
+            Notes
+          </label>
+          <textarea
+            class="NotesForm-input form-control"
+            cols="100"
+            id="notes"
+            name="notes"
+            rows="15"
+          />
+        </div>
+        <div
+          class="mb-3"
+        >
+          <label
+            class="NotesForm-label form-label"
+            for="marker"
+          >
+            Prayed today?
+          </label>
+          <div
+            class=""
+          >
+            <input
+              class="form-check-input"
+              id="marker"
+              name="marker"
+              type="checkbox"
+              value="false"
+            />
+          </div>
+        </div>
+        <button
+          class="btn btn-secondary"
+          type="button"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </DocumentFragment>
 `;

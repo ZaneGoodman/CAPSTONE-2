@@ -2,37 +2,65 @@
 
 exports[`Signup matches snapshot 1`] = `
 <DocumentFragment>
-  <h1>
-    Sign Up
-  </h1>
-  <form>
-    <label
-      for="username"
+  <div
+    class="Signup-background"
+  >
+    <div
+      class="Signup"
     >
-      Username
-    </label>
-    <input
-      autocomplete="username"
-      id="username"
-      name="username"
-      placeholder="username"
-      type="text"
-      value=""
-    />
-    <label>
-      Password
-    </label>
-    <input
-      autocomplete="current-password"
-      id="password"
-      name="password"
-      placeholder="password"
-      type="password"
-      value=""
-    />
-    <button>
-      Go!
-    </button>
-  </form>
+      <h1
+        class="Signup-header"
+      >
+        Sign Up
+      </h1>
+      <form
+        class="AuthForm-form"
+      >
+        <div
+          class="mb-3"
+        >
+          <label
+            class="AuthForm-label form-label"
+            for="username"
+          >
+            Username
+          </label>
+          <input
+            autocomplete="username"
+            class="AuthForm-input form-control"
+            id="username"
+            name="username"
+            placeholder="......."
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="mb-3"
+        >
+          <label
+            class="AuthForm-label form-label"
+          >
+            Password
+          </label>
+          <input
+            autocomplete="current-password"
+            class="AuthForm-input form-control"
+            id="password"
+            name="password"
+            placeholder="......."
+            type="password"
+            value=""
+          />
+        </div>
+        <button
+          class="AuthForm-btn btn btn-dark"
+          type="button"
+        >
+          Join
+        </button>
+      </form>
+    </div>
+  </div>
 </DocumentFragment>
 `;

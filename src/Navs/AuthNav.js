@@ -1,14 +1,24 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import "./AuthNav.css";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 const AuthNav = () => {
   return (
-    <div>
-      <nav style={{ backgroundColor: "lightBlue" }}>
-        <NavLink to="/my-notes">My Notes</NavLink>
-        <NavLink to="/">Rosary</NavLink>
-        <NavLink to="logout">Log Out</NavLink>
-      </nav>
-    </div>
+    <Navbar expand="lg" className="AuthNav-nav">
+      <Navbar.Brand href="/">Prayer Room{"📿"}</Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link href="/my-notes" className="AuthNav-link">
+          Journal
+        </Nav.Link>
+        <Nav.Link href="/" className="AuthNav-link">
+          Rosary
+        </Nav.Link>
+        <Nav.Link href="logout" className="AuthNav-link">
+          Log Out
+        </Nav.Link>
+      </Nav>
+    </Navbar>
   );
 };
 

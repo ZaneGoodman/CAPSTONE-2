@@ -3,7 +3,7 @@ import { useAuth } from "../provider/authProvider";
 import { useNavigate } from "react-router-dom";
 import AuthForm from "../forms/AuthForm";
 import Authorization from "../models/authUser";
-
+import "./Signup.css";
 const Signup = () => {
   const { setToken, setUsername } = useAuth();
   const navigate = useNavigate();
@@ -30,10 +30,12 @@ const Signup = () => {
     }
   };
   return (
-    <>
-      <h1>Sign Up</h1>
-      <AuthForm login={handleLogin} />
-    </>
+    <div className="Signup-background">
+      <div className="Signup">
+        <h1 className="Signup-header">Sign Up</h1>
+        <AuthForm login={handleLogin} />
+      </div>
+    </div>
   );
 };
 

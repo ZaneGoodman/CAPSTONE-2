@@ -1,0 +1,22 @@
+.UserNotes-container {
+  background-image: url("https://images.freeimages.com/images/large-previews/b14/rosary-9-1244995.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 49px;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+}
+.UserNotes-list {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.UserNotes-note-container {
+  margin: auto;
+  width: 30rem;
+}

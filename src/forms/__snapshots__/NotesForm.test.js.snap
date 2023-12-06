@@ -2,30 +2,51 @@
 
 exports[`NotesForm matches snapshot 1`] = `
 <DocumentFragment>
-  <form>
-    <label
-      for="notes"
+  <form
+    class=""
+  >
+    <div
+      class="mb-3"
     >
-      Notes
-    </label>
-    <textarea
-      cols="100"
-      id="notes"
-      name="notes"
-      rows="15"
-    />
-    <label
-      for="marker"
+      <label
+        class="NotesForm-label form-label"
+        for="notes"
+      >
+        Notes
+      </label>
+      <textarea
+        class="NotesForm-input form-control"
+        cols="100"
+        id="notes"
+        name="notes"
+        rows="15"
+      />
+    </div>
+    <div
+      class="mb-3"
     >
-      Prayed today?
-    </label>
-    <input
-      id="marker"
-      name="marker"
-      type="checkbox"
-      value="false"
-    />
-    <button>
+      <label
+        class="NotesForm-label form-label"
+        for="marker"
+      >
+        Prayed today?
+      </label>
+      <div
+        class=""
+      >
+        <input
+          class="form-check-input"
+          id="marker"
+          name="marker"
+          type="checkbox"
+          value="false"
+        />
+      </div>
+    </div>
+    <button
+      class="btn btn-secondary"
+      type="button"
+    >
       Submit
     </button>
   </form>

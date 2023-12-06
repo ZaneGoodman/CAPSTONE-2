@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import Notes from "../models/notes";
-
+import "./NotesForm.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 //** Form for adding notes for the current Rosary prayer. Will render underneath the Rosary */
 const NotesForm = ({ date, season, username, setAddedNotes }) => {
   const checkbox = useRef();
@@ -42,27 +44,40 @@ const NotesForm = ({ date, season, username, setAddedNotes }) => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="notes">Notes</label>
-        <textarea
-          onChange={handleChange}
-          id="notes"
-          name="notes"
-          rows={15}
-          cols={100}
-          value={formData.notes}></textarea>
+      <Form>
+        <Form.Group className="mb-3">
+          <Form.Label className="NotesForm-label" htmlFor="notes">
+            Notes
+          </Form.Label>
 
-        <label htmlFor="marker">Prayed today?</label>
-        <input
-          onChange={handleCheckbox}
-          type="checkbox"
-          id="marker"
-          name="marker"
-          ref={checkbox}
-          value={formData.marker}
-        />
-        <button>Submit</button>
-      </form>
+          <Form.Control
+            className="NotesForm-input"
+            as="textarea"
+            onChange={handleChange}
+            id="notes"
+            name="notes"
+            rows={15}
+            cols={100}
+            value={formData.notes}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label className="NotesForm-label" htmlFor="marker">
+            Prayed today?
+          </Form.Label>
+          <Form.Check
+            onChange={handleCheckbox}
+            type="checkbox"
+            id="marker"
+            name="marker"
+            ref={checkbox}
+            value={formData.marker}
+          />
+        </Form.Group>
+        <Button variant="secondary" onClick={handleSubmit}>
+          Submit
+        </Button>
+      </Form>
     </>
   );
 };
