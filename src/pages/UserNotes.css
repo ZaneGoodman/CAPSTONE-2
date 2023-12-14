@@ -20,3 +20,11 @@
   margin: auto;
   width: 30rem;
 }
+
+.UserNotes-search {
+  margin: 10px;
+}
+
+.UserNotes-calendar {
+  margin: 20px auto;
+}

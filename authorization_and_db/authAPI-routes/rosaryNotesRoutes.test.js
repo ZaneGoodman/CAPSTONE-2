@@ -76,7 +76,7 @@ describe("POST /rosary/notes/all", function () {
           username: "u1",
         },
         {
-          date: "2023-12-04T05:00:00.000Z",
+          date: "2023-12-05T05:00:00.000Z",
           has_prayed: true,
           notes: "note3",
           season: "s1",
@@ -87,14 +87,105 @@ describe("POST /rosary/notes/all", function () {
   });
 
   test("bad request with missing fields", async function () {
-    const resp = await request(app).post("/auth/register").send({
+    const resp = await request(app).post("/rosary/notes/all").send({
       username: "new",
     });
     expect(resp.statusCode).toEqual(400);
   });
 
   test("bad request with invalid data", async function () {
-    const resp = await request(app).post("/auth/register").send({
+    const resp = await request(app).post("/rosary/notes/all").send({
+      username: "new",
+    });
+    expect(resp.statusCode).toEqual(400);
+  });
+});
+
+/************************************** POST /rosary/notes/recent */
+describe("POST /rosary/notes/recent", function () {
+  test("works", async function () {
+    const resp = await request(app).post("/rosary/notes/recent").send({
+      username: "u1",
+    });
+    expect(resp.statusCode).toEqual(200);
+    expect(resp.body).toEqual({
+      recentNotes: [
+        {
+          date: "2023-12-05T05:00:00.000Z",
+          has_prayed: true,
+          notes: "note3",
+          season: "s1",
+          username: "u1",
+        },
+        {
+          date: "2023-12-04T05:00:00.000Z",
+          has_prayed: true,
+          notes: "note2",
+          season: "s1",
+          username: "u1",
+        },
+        {
+          date: "2023-12-03T05:00:00.000Z",
+          has_prayed: true,
+          notes: "note1",
+          season: "s1",
+          username: "u1",
+        },
+      ],
+    });
+  });
+  test("bad request with missing fields", async function () {
+    const resp = await request(app).post("/rosary/notes/recent").send({
+      username: "new",
+    });
+    expect(resp.statusCode).toEqual(400);
+  });
+
+  test("bad request with invalid data", async function () {
+    const resp = await request(app).post("/rosary/notes/recent").send({
+      username: "new",
+    });
+    expect(resp.statusCode).toEqual(400);
+  });
+});
+/************************************** POST /rosary/notes/range */
+describe("POST /rosary/notes/range", function () {
+  test("works", async function () {
+    const resp = await request(app).post("/rosary/notes/range").send({
+      username: "u1",
+      date1: "2023/12/03",
+      date2: "2023/12/04",
+    });
+    expect(resp.statusCode).toEqual(200);
+    expect(resp.body).toEqual({
+      rangedNotes: [
+        {
+          date: "2023-12-03T05:00:00.000Z",
+          has_prayed: true,
+          notes: "note1",
+          season: "s1",
+          username: "u1",
+        },
+        {
+          date: "2023-12-04T05:00:00.000Z",
+          has_prayed: true,
+          notes: "note2",
+          season: "s1",
+          username: "u1",
+        },
+      ],
+    });
+  });
+
+  test("bad request with missing dates", async function () {
+    const resp = await request(app).post("/rosary/notes/range").send({
+      username: "u1",
+    });
+    expect(resp.statusCode).toEqual(400);
+  });
+
+  test("bad request with invalid data", async function () {
+    const resp = await request(app).post("/rosary/notes/range").send({
       username: "new",
     });
     expect(resp.statusCode).toEqual(400);

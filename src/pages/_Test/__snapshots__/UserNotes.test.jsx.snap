@@ -11,8 +11,16 @@ exports[`UserNotes matches snapshot 1`] = `
       <h1>
         Your Prayer Notes
       </h1>
+      <div>
+        <button
+          class="UserNotes-search btn btn-dark"
+          type="button"
+        >
+          Search Dates
+        </button>
+      </div>
       <h3>
-        You haven't added any notes yet
+        You haven't added any notes here yet
       </h3>
     </div>
   </div>

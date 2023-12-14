@@ -77,6 +77,74 @@ describe("getAllNotes", function () {
     }
   });
 });
+//   /************************************** get most recent notes method */
+
+describe("getMostRecentNotes", function () {
+  test("works", async function () {
+    const notes = await RosaryNotes.getMostRecentNotes({
+      username: "u1",
+    });
+    expect(notes).toEqual([
+      {
+        date: expect.any(Date), //This does not return a string, in order to implement this test, date must be passed in this way to ensure proper testing.
+        has_prayed: true,
+        notes: "note1",
+        season: "advent time",
+        username: "u1",
+      },
+    ]);
+  });
+  test("Bad Request Error if invalid username", async function () {
+    try {
+      await RosaryNotes.getMostRecentNotes({
+        username: "not a user",
+      });
+      fail();
+    } catch (err) {
+      expect(err instanceof BadRequestError).toBeTruthy();
+    }
+  });
+});
+//   /************************************** get notes by range method */
+
+describe("getNotesByRange", function () {
+  test("works", async function () {
+    const notes = await RosaryNotes.getNotesByRange({
+      username: "u2",
+      date1: "2023/12/04",
+      date2: "2023/12/04",
+    });
+    expect(notes).toEqual([
+      {
+        date: expect.any(Date), //This does not return a string, in order to implement this test, date must be passed in this way to ensure proper testing.
+        has_prayed: true,
+        notes: "note2",
+        season: "advent time",
+        username: "u2",
+      },
+    ]);
+  });
+  test("Bad Request Error if invalid username", async function () {
+    try {
+      await RosaryNotes.getNotesByRange({
+        username: "not a user",
+      });
+      fail();
+    } catch (err) {
+      expect(err instanceof BadRequestError).toBeTruthy();
+    }
+  });
+  test("Bad Request Error if invalid dates", async function () {
+    try {
+      await RosaryNotes.getNotesByRange({
+        username: "u2",
+      });
+      fail();
+    } catch (err) {
+      expect(err instanceof BadRequestError).toBeTruthy();
+    }
+  });
+});
 
 /************************************** Check if date exist method */
 

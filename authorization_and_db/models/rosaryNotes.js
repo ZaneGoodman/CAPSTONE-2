@@ -51,6 +51,58 @@ class RosaryNotes {
     const trackerDetails = results.rows;
     return trackerDetails;
   }
+  static async getMostRecentNotes({ username }) {
+    const user = await db.query(
+      `SELECT username FROM users WHERE username=$1`,
+      [username]
+    );
+    if (!user.rows[0]) throw new BadRequestError("Invalid username");
+
+    const results = await db.query(
+      `
+                    SELECT username,
+                           notes,    
+                           has_prayed,
+                           date,
+                           season
+                    FROM prayer_tracker 
+                    WHERE username = $1 
+                    ORDER BY date 
+                    DESC LIMIT 10
+                    `,
+      [username]
+    );
+    const recentNotes = results.rows;
+    return recentNotes;
+  }
+  static async getNotesByRange({ username, date1, date2 }) {
+    const user = await db.query(
+      `SELECT username FROM users WHERE username=$1`,
+      [username]
+    );
+    if (!user.rows[0]) throw new BadRequestError("Invalid username");
+    if (!date1 || !date2) throw new BadRequestError("Invalid dates");
+
+    const results = await db.query(
+      `
+                    SELECT username,
+                           notes,    
+                           has_prayed,
+                           date,
+                           season
+                    FROM prayer_tracker 
+                    WHERE username = $1 
+                    AND date 
+                    BETWEEN $2 
+                    AND $3
+                    ORDER BY date 
+                    
+                    `,
+      [username, date1, date2]
+    );
+    const rangedNotes = results.rows;
+    return rangedNotes;
+  }
 
   static async checkForExistingDate({ username, date }) {
     const user = await db.query(

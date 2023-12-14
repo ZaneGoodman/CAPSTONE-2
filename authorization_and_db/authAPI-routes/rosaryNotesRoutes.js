@@ -33,7 +33,7 @@ router.post("/notes/new", async function (req, res, next) {
 });
 
 /**
- * POST /rosary/notes {username} => {username, notes, has_prayed, date, season}
+ * POST /rosary/notes/all {username} => {username, notes, has_prayed, date, season}
  *
  * Will get all prayer tracker information that is linked to the passed in username
  */
@@ -50,9 +50,49 @@ router.post("/notes/all", async function (req, res, next) {
   }
 });
 /**
- * POST /rosary/notes {username} => {username, notes, has_prayed, date, season}
+ * POST /rosary/notes/recent {username} => {username, notes, has_prayed, date, season}
  *
- * Will get all prayer tracker information that is linked to the passed in username
+ * Gets the most recent entires, 10 of them.
+ *
+ */
+router.post("/notes/recent", async function (req, res, next) {
+  try {
+    if (!req.body.username) {
+      throw new BadRequestError("Missing username");
+    }
+    const { username } = req.body;
+    const recentNotes = await RosaryNotes.getMostRecentNotes({ username });
+    return res.send({ recentNotes });
+  } catch (err) {
+    return next(err);
+  }
+});
+/**
+ * POST /rosary/notes/recent {username, 2023/12/01, 2023/12/05} => {username, notes, has_prayed, date, season}
+ *
+ * Gets all available notes with dates between the two passed in dates
+ *
+ */
+router.post("/notes/range", async function (req, res, next) {
+  try {
+    if (!req.body.username || !req.body.date1 || !req.body.date2) {
+      throw new BadRequestError("Missing username");
+    }
+    const { username, date1, date2 } = req.body;
+    const rangedNotes = await RosaryNotes.getNotesByRange({
+      username,
+      date1,
+      date2,
+    });
+    return res.send({ rangedNotes });
+  } catch (err) {
+    return next(err);
+  }
+});
+/**
+ * POST /rosary/notes/check-date {username, date} => {true/false}
+ *
+ * Checks if the passed in date exist, true if yes, false if not
  */
 router.post("/notes/check-date", async function (req, res, next) {
   try {

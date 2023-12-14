@@ -41,7 +41,7 @@ async function commonBeforeAll() {
     username: "u1",
     notes: "note3",
     has_prayed: true,
-    date: "2023/12/4",
+    date: "2023/12/5",
     season: "s1",
   });
 }

@@ -25,7 +25,8 @@ async function commonBeforeAll() {
   await db.query(`
   INSERT INTO prayer_tracker(id, username, notes, has_prayed, date, season)
   VALUES (1, 'u1', 'note1', true, '2023/12/03', 'advent time'),
-         (2, 'u2', 'note2' , true, '2023/12/04', 'advent time')`);
+         (2, 'u2', 'note2' , true, '2023/12/04', 'advent time'),
+         (3, 'u2', 'note3' , true, '2023/12/05', 'advent time')`);
 }
 
 async function commonBeforeEach() {

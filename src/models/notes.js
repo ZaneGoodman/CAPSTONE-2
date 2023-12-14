@@ -40,6 +40,36 @@ class Notes {
       throw new Error(err);
     }
   }
+  /**getRecentNotes method - by passing in username, the server will
+   * return all recent prayer tracker information (max 10 items)
+   * associated with the user
+   * {username} => [{username, notes, has_prayed, date, season}
+   *                {username, notes, has_prayed, date, season}]
+   */
+  static async getRecentNotes(username) {
+    try {
+      const res = await axios.post(`${API_BASE_URL}/rosary/notes/recent`, {
+        username,
+      });
+
+      return res;
+    } catch (err) {
+      throw new Error(err);
+    }
+  }
+  static async getNotesByRange(username, date1, date2) {
+    try {
+      const res = await axios.post(`${API_BASE_URL}/rosary/notes/range`, {
+        username,
+        date1,
+        date2,
+      });
+
+      return res;
+    } catch (err) {
+      throw new Error(err);
+    }
+  }
 
   /**checkDateExist- by passing in a username and date the server returns
    * true/false depending on if it finds the passed in date
